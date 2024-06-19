@@ -69,16 +69,12 @@ p {
 }
 
 .video-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    justify-content: space-between;
 }
 
 .video {
-    flex: 1;
-    min-width: 300px;
-    max-width: calc(50% - 1rem); /* Ensure two videos per row */
     margin: 1rem 0;
 }
 
@@ -134,8 +130,8 @@ footer {
         flex-direction: column;
     }
 
-    .video {
-        max-width: 100%;
+    .video-container {
+        grid-template-columns: 1fr;
     }
 
     .media {
