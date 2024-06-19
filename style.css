@@ -53,12 +53,12 @@ p {
     color: #555;
 }
 
-.challenge-container {
+.challenge-container, .comparison-container {
     display: flex;
     gap: 2rem;
 }
 
-.challenge {
+.challenge, .comparison {
     flex: 1;
     background: #f9f9f9;
     padding: 1rem;
@@ -85,6 +85,14 @@ video {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 footer {
     background: #333;
     color: white;
@@ -97,7 +105,7 @@ footer {
         padding: 2rem 1rem;
     }
 
-    .challenge-container, .video-container {
+    .challenge-container, .comparison-container, .video-container {
         flex-direction: column;
     }
 }
