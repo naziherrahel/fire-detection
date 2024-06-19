@@ -19,15 +19,7 @@ nav {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
     font-size: 1.5rem;
-}
-
-.logo img {
-    margin-right: 0.5rem;
-    height: 2rem;
-    width: auto;
 }
 
 .nav-links {
@@ -86,12 +78,12 @@ p {
 .video {
     flex: 1;
     min-width: 300px;
+    max-width: calc(50% - 1rem); /* Ensure two videos per row */
     margin: 1rem 0;
 }
 
 .media {
     width: 100%;
-    max-width: 500px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -119,6 +111,18 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-bottom: 1rem;
+}
+
+.logo-icon {
+    height: 2rem;
+    width: auto;
 }
 
 @media (max-width: 768px) {
@@ -128,6 +132,10 @@ footer {
 
     .challenge-container, .why-fail-container, .video-container {
         flex-direction: column;
+    }
+
+    .video {
+        max-width: 100%;
     }
 
     .media {
