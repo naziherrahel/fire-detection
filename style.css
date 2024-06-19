@@ -19,7 +19,15 @@ nav {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
+}
+
+.logo img {
+    margin-right: 0.5rem;
+    height: 2rem;
+    width: auto;
 }
 
 .nav-links {
