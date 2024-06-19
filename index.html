@@ -20,7 +20,9 @@
     <section id="about">
         <h1>Advanced Forest Fire Detection System</h1>
         <p>Forest fires pose a critical threat to ecosystems, property, and human life, especially in regions like Siberia. Traditional detection systems often produce false positives by misidentifying non-fire objects as fires. Our advanced detection system significantly reduces false positives while improving detection accuracy and reliability.</p>
-        <img src="media/2-May.jpg" alt="Map of Siberia highlighting fire-prone areas" class="image">
+        <div class="image-container">
+            <img src="media/2-May.jpg" alt="Map of Siberia highlighting fire-prone areas" class="image">
+        </div>
     </section>
 
     <section id="challenges">
@@ -39,7 +41,31 @@
                 <p>Existing models often use simple visual features that are not sufficient for distinguishing complex patterns.</p>
             </div>
         </div>
-        <img src="media/carlight.PNG" alt="Car lights mistaken for fire" class="image">
+        <div class="image-container">
+            <img src="media/carlight.PNG" alt="Car lights mistaken for fire" class="image">
+        </div>
+    </section>
+
+    <section id="why-fail">
+        <h2>Why Existing Models Fail</h2>
+        <div class="why-fail-container">
+            <div class="reason">
+                <h3>Lack of Contextual Awareness</h3>
+                <p>Traditional models treat each frame in isolation, missing the crucial contextual information needed for accurate detection. Fires have specific temporal and spatial patterns that aren't captured in a single frame analysis, leading to confusion with transient light sources.</p>
+                <div class="image-container">
+                    <img src="media/fire_by_time.PNG" alt="Fire temporal patterns" class="image">
+                    <img src="media/light_by_time.PNG" alt="Similar object temporal patterns" class="image">
+                </div>
+            </div>
+            <div class="reason">
+                <h3>Poor Differentiation Capabilities</h3>
+                <p>Models that rely heavily on visual similarity often misclassify objects that look like fire but don't behave like fire. Basic features do not capture the nuances needed to differentiate fire from other bright objects, especially in complex environments.</p>
+            </div>
+            <div class="reason">
+                <h3>Environmental Variability</h3>
+                <p>Variations in natural lighting, weather conditions, and artificial light sources can confuse models that do not adapt well to different environments, leading to high rates of false positives.</p>
+            </div>
+        </div>
     </section>
 
     <section id="demonstration">
@@ -47,50 +73,32 @@
         <div class="video-container">
             <div class="video">
                 <h3>Existing Approaches: False Positive with Sunlight</h3>
-                <video controls>
+                <video controls class="media">
                     <source src="videos/non_fire2.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="video">
                 <h3>Existing Approaches: Low Accuracy with Real Fire</h3>
-                <video controls>
-                    <source src="videos/non_fire2.mp4" type="video/mp4">
+                <video controls class="media">
+                    <source src="videos/fire2.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="video">
                 <h3>Our System: Accurate Detection with Sunlight</h3>
-                <video controls>
+                <video controls class="media">
                     <source src="videos/non_fire1.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="video">
                 <h3>Our System: High Accuracy with Real Fire</h3>
-                <video controls>
+                <video controls class="media">
                     <source src="videos/fire1.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
-    </section>
-
-    <section id="comparison">
-        <h2>Comparative Analysis</h2>
-        <div class="comparison-container">
-            <div class="comparison">
-                <h3>Traditional Models</h3>
-                <ul>
-                    <li>High False Positives: Prone to frequent false alarms leading to resource wastage.</li>
-                    <li>Limited Insight: Lack of advanced analytical capabilities reduces accuracy in dynamic conditions.</li>
-                </ul>
-            </div>
-            <div class="comparison">
-                <h3>Our System</h3>
-                <ul>
-                    <li>Reduced False Positives: Significantly lower false alarm rates due to advanced detection techniques.</li>
-                    <li>Adaptability: Capable of accurately identifying fire in various environments and conditions, reducing the likelihood of false positives.</li>
-                </ul>
-            </div>
+        <div class="image-container">
+            <img src="media/architec.PNG" alt="Architecture diagram of detection system" class="image">
         </div>
-        <img src="media/image3.png" alt="Fire detection comparison" class="image">
     </section>
 
     <section id="contact">
@@ -100,7 +108,6 @@
         <p><strong>Address:</strong> [Your Address]</p>
         <p><strong>Phone Number:</strong> [Your Phone Number]</p>
         <p><strong>Email:</strong> [Your Email]</p>
-        <!-- <img src="media/image4.png" alt="Contact icon" class="image"> -->
     </section>
 
     <footer>
